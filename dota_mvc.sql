@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-12-2015 a las 03:30:35
+-- Tiempo de generación: 04-12-2015 a las 03:56:33
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -68,6 +68,30 @@ INSERT INTO `heroes` (`idHeroe`, `idAtributo`, `idRol`, `nombre`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `rimagenesheroes`
+--
+
+CREATE TABLE `rimagenesheroes` (
+  `idRImagenHeroe` int(11) NOT NULL,
+  `idHeroe` int(11) NOT NULL,
+  `nombre` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `rimagenesheroes`
+--
+
+INSERT INTO `rimagenesheroes` (`idRImagenHeroe`, `idHeroe`, `nombre`) VALUES
+(1, 1, 'icono'),
+(2, 2, 'icono'),
+(3, 3, 'icono'),
+(4, 4, 'icono'),
+(5, 5, 'icono'),
+(6, 6, 'icono');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `roles`
 --
 
@@ -106,6 +130,13 @@ ALTER TABLE `heroes`
   ADD KEY `idRol` (`idRol`);
 
 --
+-- Indices de la tabla `rimagenesheroes`
+--
+ALTER TABLE `rimagenesheroes`
+  ADD PRIMARY KEY (`idRImagenHeroe`),
+  ADD KEY `idHeroe` (`idHeroe`);
+
+--
 -- Indices de la tabla `roles`
 --
 ALTER TABLE `roles`
@@ -126,6 +157,11 @@ ALTER TABLE `atributos`
 ALTER TABLE `heroes`
   MODIFY `idHeroe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
+-- AUTO_INCREMENT de la tabla `rimagenesheroes`
+--
+ALTER TABLE `rimagenesheroes`
+  MODIFY `idRImagenHeroe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
@@ -140,6 +176,12 @@ ALTER TABLE `roles`
 ALTER TABLE `heroes`
   ADD CONSTRAINT `heroes_ibfk_2` FOREIGN KEY (`idRol`) REFERENCES `roles` (`idRol`),
   ADD CONSTRAINT `heroes_ibfk_1` FOREIGN KEY (`idAtributo`) REFERENCES `atributos` (`idAtributo`);
+
+--
+-- Filtros para la tabla `rimagenesheroes`
+--
+ALTER TABLE `rimagenesheroes`
+  ADD CONSTRAINT `rimagenesheroes_ibfk_1` FOREIGN KEY (`idHeroe`) REFERENCES `heroes` (`idHeroe`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
