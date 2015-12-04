@@ -7,6 +7,7 @@
 				$c = new MainController();
 				break;
 			case 'heroes':
+				$c = new HeroesController();
 				break;
 		}
 
@@ -14,7 +15,7 @@
 	}
 
 	$controllers = array('main' 	=> ['index', 'error'],
-						 'heroes' 	=> ['index']
+						 'heroes' 	=> ['showAll', 'show']
 						 );
 
 	if(array_key_exists($controller, $action)){
