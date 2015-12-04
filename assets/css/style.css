@@ -1,0 +1,73 @@
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 27px;
+    color: #666666;
+}
+
+.fb-bg {
+background-color: #3B5998;
+}
+.tw-bg {
+background-color: #55ACEE;
+}
+.gplus-bg {
+background-color: #DD4B39;
+}
+
+footer.page-footer a {
+line-height: 25px;
+}
+
+footer.page-footer a {
+color: #fff;
+font-size: 15px;
+}
+
+.dotanav{
+	background-color: #080808;
+}
+
+.author-box {
+    margin-top: 50px;
+}
+.card-panel {
+    padding: 20px;
+}
+
+.card, .card-panel {
+    background-color: #fff;
+    margin: .5rem 0 1rem;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+
+.author-box .author-name {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.author-box .personal-sm a {
+    padding: 8px 10px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.author-box .author-description {
+    margin-left: 10px;
+}
+
+.author-box p, .comment-text, .latest-posts .card-content p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.hero-description{
+	    display: inline-flex;
+    margin-left: 10px;
+}
