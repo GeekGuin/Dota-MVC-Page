@@ -7,19 +7,21 @@
 				$c = new MainController();
 				break;
 			case 'heroes':
+				require_once('/models/heroes.php');
+				$c = new HeroesController();
 				break;
 		}
 
 		$c->{$a}();
 	}
 
-	$controllers = array('main' 	=> ['index', 'error'],
-						 'heroes' 	=> ['index']
+	$controllers = array('main' 	=> ['main', 'error'],
+						 'heroes' 	=> ['showAll', 'show']
 						 );
 
-	if(array_key_exists($controller, $action)){
-		if(in_array($action, $controllers[$controller])){
-			call($controller, $action);
+	if(array_key_exists(GVC::$controller, $controllers)){
+		if(in_array(GVC::$action, $controllers[GVC::$controller])){
+			call(GVC::$controller, GVC::$action);
 		}else{
 			call('main', 'error');
 		}
