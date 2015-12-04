@@ -1,7 +1,8 @@
 <?php
 class HeroesController{
-	public function showAll(){
-		$heroes = Heroes::showAll();
+	public function showAll(){		
+		$heroes = Heroes::all();
+		require_once('/views/' . GVC::$lang . "/heroes/index.php");
 	}
 
 	public function show($id){

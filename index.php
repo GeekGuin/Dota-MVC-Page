@@ -1,18 +1,20 @@
 <?php
 	require_once('connection.php');
+	require_once('controllers/globalVarsController.php');
 
 	if(isset($_GET['controller']) && isset($_GET['action'])){
-		$controller = $_GET['controller'];
-		$action = $_GET['action'];
+		GVC::$controller = $_GET['controller'];
+		GVC::$action = $_GET['action'];
 	}else{
-		$controller = 'main';
-		$action = 'index';
+		GVC::$controller = 'main';
+		GVC::$action = 'main';
 	}
 
 	if(isset($_GET['lang'])){
-		$lang = $_GET['lang'];
+		GVC::$lang = $_GET['lang'];
 	}else{
-		$lang = 'es';
+		GVC::$lang = 'es';
 	}
 
+	require_once('routes.php');
 ?>
