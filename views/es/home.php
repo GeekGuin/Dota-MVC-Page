@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Bootstrap Core -->
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
 
 	<!-- Material Design Bootstrap Core -->
-	<link rel="stylesheet" href="../assets/css/mdb.css">
+	<link rel="stylesheet" href="../../assets/css/mdb.css">
 
 	<!-- Custom CSS core -->
-	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 	
@@ -33,7 +33,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand waves-effect waves-light" href="#"><img src="../assets/img/logo.png" height="33" width="167" alt="" class="img-responsive"></a>
+        <a class="navbar-brand waves-effect waves-light" href="#"><img src="../../assets/img/logo.png" height="33" width="167" alt="" class="img-responsive"></a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,7 +68,7 @@
     <div class="row center-on-small-only">
         <!--Avatar-->
         <div class="col-sm-3 ">
-            <img src="../assets/img/heroes/lion_full.png" height="200" width="350" class="img-responsive">
+            <img src="../../assets/img/heroes/lion_full.png" height="200" width="350" class="img-responsive">
         </div>
         <!--/.Avatar-->
 
@@ -77,7 +77,7 @@
             <h5 class="author-name">Lion</h5>
 
             <div class="personal-sm">
-                <p class="hero-description"><span>Atributo Principal: </span> <img src="../assets/img/int.png" height="33" width="33" alt="" class="img-responsive"> </p>
+                <p class="hero-description"><span>Atributo Principal: </span> <img src="../../assets/img/int.png" height="33" width="33" alt="" class="img-responsive"> </p>
             </div>
             <br>
             <!--Description-->
@@ -156,24 +156,24 @@
   <!-- SCRIPTS -->
 
   <!-- JQuery -->
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
 
     <!-- Material Design Bootstrap -->
-    <script type="text/javascript" src="../assets/js/mdb.js"></script>
+    <script type="text/javascript" src="../../assets/js/mdb.js"></script>
 
     <!-- Parallax Core JavaScript -->
-    <script src="../assets/js/custom.js"></script>
+    <script src="../../assets/js/custom.js"></script>
 
     <!-- Smoothscroll JavaScript -->
-    <script src="../assets/js/smoothscroll.js"></script>
+    <script src="../../assets/js/smoothscroll.js"></script>
 
     <!-- Parallax Core JavaScript -->
-    <script src="../assets/js/parallax.js"></script>
+    <script src="../../assets/js/parallax.js"></script>
 
-    <script src="../assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
 
 </body>
 </html>
